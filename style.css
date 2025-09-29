@@ -1,0 +1,166 @@
+
+body{
+  margin:0 auto;
+  font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:rgb(255, 255, 255);
+ background: radial-gradient(circle, #8b4589, #202d46);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  max-width:800px;
+  margin:0 auto;
+  gap:50px;
+  padding:50px;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.skip-link{
+  position:absolute;
+  left:-999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+.site-header{
+ border-bottom:1px solid #eee;
+ padding:20px;
+ margin-bottom:.75rem;
+}
+
+section li{
+  margin: 0;
+  padding:0;
+  text-align: left;
+}
+
+ button{
+ margin:25px;
+ border-radius: 10px;
+}
+button a{
+   text-decoration: none;
+  color:black;
+  font-size: 15px;
+}
+
+.project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+
+.header-inner a{
+  color:white;
+  text-decoration: none;
+}
+
+.branding h1{
+ font-size:1.25rem;
+ margin:0;
+ letter-spacing:.04em;
+}
+
+.branding-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.branding .contact{
+  margin:5px 0;
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.contact a{
+    text-decoration: underline;
+    color:rgb(255, 255, 255);
+}
+
+.projects a{
+    color:white;
+}
+
+.photo img{
+ width:96px;
+ height:96px;
+ object-fit:cover;
+ border-radius:6px;
+ border:1px solid #ddd;
+}
+
+iframe{
+  width:800px;
+  height:400px;
+  display: flex;
+}
+
+.main-nav ul{
+  list-style:none;
+  padding:0;
+  margin:.5rem 0 0 0;
+  display:flex;
+  gap:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav a{
+  color: white;
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+}
+
+h2{
+  font-size:30px;
+  margin:0 0 .4rem;
+  }
+
+.meta{
+  font-size:.95rem;
+  color:var(--muted);
+  margin:0 .25rem 0 0;
+}
+
+
+.project-detail{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+
+
+/* Responsive layout */
+@media (min-width:720px){
+  .header-inner{align-items:flex-start;}
+  .branding{flex:1}
+  .photo{margin-left:1rem}
+  .main-grid{display:grid;grid-template-columns:2fr 1fr;gap:var(--gap);}
+  .experience{grid-column:1 / -1;}
+}
