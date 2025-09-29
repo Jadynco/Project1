@@ -17,25 +17,14 @@ body{
   padding:50px;
   display: flex;
   flex-direction: column;  
-  justify-content: center;
-  align-items: center;
+  text-align: left;
 }
 
-
-
-.skip-link{
-  position:absolute;
-  left:-999px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
-}
 
 .site-header{
  border-bottom:1px solid #eee;
  padding:20px;
- margin-bottom:.75rem;
+ margin-bottom:3px;
 }
 
 section li{
@@ -66,7 +55,7 @@ button a{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:1rem;
+  gap:3px;
 }
 
 .header-inner a{
@@ -75,9 +64,8 @@ button a{
 }
 
 .branding h1{
- font-size:1.25rem;
+ font-size:20px;
  margin:0;
- letter-spacing:.04em;
 }
 
 .branding-head{
@@ -90,7 +78,7 @@ button a{
 .branding .contact{
   margin:5px 0;
   color:var(--muted);
-  font-size:.95rem;
+  font-size:15px;
 }
 
 .contact a{
@@ -100,7 +88,9 @@ button a{
 
 .projects a{
     color:white;
+    font-size: 15px;
 }
+
 
 .photo img{
  width:96px;
@@ -119,7 +109,7 @@ iframe{
 .main-nav ul{
   list-style:none;
   padding:0;
-  margin:.5rem 0 0 0;
+  margin:5px 0 0 0;
   display:flex;
   gap:30px;
   display: flex;
@@ -131,18 +121,17 @@ iframe{
   color: white;
   text-decoration:none;
   font-weight:600;
-  font-size:15px;
+  font-size:20px;
 }
 
 h2{
-  font-size:30px;
-  margin:0 0 .4rem;
+  font-size:25px;
   }
 
 .meta{
-  font-size:.95rem;
+  font-size:15px;
   color:var(--muted);
-  margin:0 .25rem 0 0;
+
 }
 
 
@@ -155,12 +144,30 @@ h2{
 }
 
 
-
-/* Responsive layout */
 @media (min-width:720px){
-  .header-inner{align-items:flex-start;}
-  .branding{flex:1}
-  .photo{margin-left:1rem}
-  .main-grid{display:grid;grid-template-columns:2fr 1fr;gap:var(--gap);}
-  .experience{grid-column:1 / -1;}
+  .header-inner{
+    align-items:flex-start;
+  }
+
+  .branding{
+    flex:1;
+  }
+  .photo{
+    margin-left:3px;
+  }
+  .main-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:var(--gap);
+  }
+  .experience{
+    grid-column:1 / -1;
+  }
+
+.main-nav a{
+  color: white;
+  text-decoration:none;
+  font-weight:600;
+  font-size:20px;
+}
 }
